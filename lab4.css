@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: aquamarine;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem 0; /* เว้นระยะห่างระหว่างรูปภาพ */
+}
+
+.image-container img {
+  width: 50px;
+  height: 70px;
+  margin-right: 0.5rem; /* เว้นระยะห่างระหว่างรูปภาพ */
+  animation: flash 17s infinite; /* จำนวนเวลาทั้งหมด 17 วินาที (1 วินาที * 17 รูป) */
+  animation-delay: calc(var(--i) * -1s); /* หากเริ่มต้นที่ 0 ให้รูปแรกไม่มีค่า delay, รูปที่ 2 จะมีค่า delay -1s, รูปที่ 3 จะมีค่า delay -2s, ... */
+}
+
+@keyframes flash {
+  0%, 50% {
+      opacity: 1;
+  }
+  25%, 75% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 columns */
+  gap: 20px; /* Gap between grid items */
+  width: 80%; /* 80% of the viewport width */
+  max-width: 800px; /* Maximum width for the grid */
+}
+
+.grid-item {
+  width: 70%;
+  padding: 20px;
+  background-color: #fbcce0;
+  border-radius: 10px;
+}
+
+.imgProduct{
+  max-width: 80%;
+}
+
+.grid-containers {
+    display: grid;
+    width: 80%;
+    margin: auto;
+    background-color: pink; /* สีชมพู */
+}
+
+.item {
+    background-color: #f7f6cf; /* สีขาว */
+    padding: 20px;
+    text-align: center;
+}
+

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cat's Condo Ztore</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="lab4.css">
+</head>
+<body>
+    <div>
+        <img src="Picture\Head\CozyCats Condos.png" alt="Headd" width="1500" height="300">
+    </div>
+    <div class="image-container">
+        <img src="Picture/cat1.jpg" alt="cat1" style="--i: 0;">
+        <img src="Picture/cat2.jpg" alt="cat2" style="--i: 1;">
+        <img src="Picture/cat3.jpg" alt="cat3" style="--i: 2;">
+        <img src="Picture/cat4.jpg" alt="cat4" style="--i: 3;">
+        <img src="Picture/cat5.jpg" alt="cat5" style="--i: 4;">
+        <img src="Picture/cat6.jpg" alt="cat6" style="--i: 5;">
+        <img src="Picture/cat7.jpg" alt="cat7" style="--i: 6;">
+        <img src="Picture/cat8.jpg" alt="cat8" style="--i: 7;">
+        <img src="Picture/cat9.jpg" alt="cat9" style="--i: 8;">
+        <img src="Picture/cat10.jpg" alt="cat10" style="--i: 9;">
+        <img src="Picture/cat11.jpg" alt="cat11" style="--i: 10;">
+        <img src="Picture/cat12.jpg" alt="cat12" style="--i: 11;">
+        <img src="Picture/cat13.jpg" alt="cat13" style="--i: 12;">
+        <img src="Picture/cat14.jpg" alt="cat14" style="--i: 13;">
+        <img src="Picture/cat15.jpg" alt="cat15" style="--i: 14;">
+        <img src="Picture/cat16.jpg" alt="cat16" style="--i: 15;">
+        <img src="Picture/cat17.jpg" alt="cat17" style="--i: 16;">
+        <img src="Picture/cat1.jpg" alt="cat1" style="--i: 17;">
+        <img src="Picture/cat2.jpg" alt="cat2" style="--i: 18;">
+        <img src="Picture/cat3.jpg" alt="cat3" style="--i: 19;">
+        <img src="Picture/cat4.jpg" alt="cat4" style="--i: 20;">
+        <img src="Picture/cat5.jpg" alt="cat5" style="--i: 21;">
+        <img src="Picture/cat6.jpg" alt="cat6" style="--i: 22;">
+        <img src="Picture/cat7.jpg" alt="cat7" style="--i: 23;">
+        <img src="Picture/cat8.jpg" alt="cat8" style="--i: 24;">
+    </div>
+</div>
+
+<div class="slideshow-container">
+    <div class="slide">
+      <img src="Picture\Product\Product 1.png" alt="Product1">
+    </div>
+    <div class="slide">
+      <img src="Picture\Product\Product 2.png" alt="Product2">
+    </div>
+    <div class="slide">
+      <img src="Picture\Product\Product 3.png" alt="Product3">
+    </div>
+    <div class="slide">
+      <img src="Picture\Product\Product 4.png" alt="Product4">
+    </div>
+    <!-- Slideshow images -->
+    <script>
+      let slideIndex = 0;
+      showSlides();
+  
+      function showSlides() {
+        let slides = document.getElementsByClassName("slide");
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 2000); // เปลี่ยนรูปทุก 2 วินาที
+      }
+    </script>
+    <style>
+      .slideshow-container {
+        max-width: 250px;
+        margin: auto;
+        position: relative;
+      }
+  
+      .slide {
+        display: none;
+        background-color: #d3ecdc; /* สีพื้นหลังสำหรับสไลด์ */
+        padding: 10px; /* เพิ่มระยะห่างรอบรูปภาพ */
+        border: 3.5px solid #f4d9c1; /* เพิ่มเส้นขอบสำหรับสไลด์ */
+        border-radius: 5px; /* ปรับแต่งมุมของกรอบ */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* เพิ่มเงาสำหรับสไลด์ */
+      }
+  
+      .slide img {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+</div>
+  
+  
+<div class="grid-container">
+    <div class="grid-item">
+        <img class="imgProduct" src="Picture\Product\Product 1.png" alt="Product 1">
+        <div class="ProductName">
+            Cat Condominium with Hidden Claw Retreat
+        </div>
+        <div class="ProductDetails">
+            <b>Product Colors</b>
+            <ul>
+                <li>Gray</li>
+                <li>Beige</li>
+                <li>Green</li>
+                <li>Brown</li>
+            </ul>
+            <b>Product Details</b>
+            <ul>
+                <li>Height : 40 cm</li>
+                <li>Bottom Base Width : 20 cm</li>
+                <li>Top Base Width : 15 cm</li>
+            </ul>
+        </div>
+    </div>
+    <div class="grid-item">
+            <img class="imgProduct" src="Picture\Product\Product 2.png" alt="Product 2">
+            <div class="ProductName">
+                Cat Condominium with Hidden Claw Retreat
+            </div>
+            <div class="ProductDetails">
+                <b>Product Colors</b>
+                <ul>
+                    <li>Brown</li>
+                </ul>
+                <b>Product Details</b>
+                <ul>
+                    <li>Width : 60 cm</li>
+                    <li>Length : 40 cm</li>
+                    <li>Height : 130 cm</li>
+                </ul>
+            </div>
+    </div>
+    <div class="grid-item">
+        <img class="imgProduct" src="Picture\Product\Product 3.png" alt="Product 3">
+        <div class="ProductName">
+            Cat Condominium with Hidden Claw Retreat
+        </div>
+        <div class="ProductDetails">
+            <b>Product Details</b>
+            <ul>
+                <li>Width : 56 cm</li>
+                <li>Length : 56 cm</li>
+                <li>Height : 155 cm</li>
+            </ul>
+        </div>
+    </div>
+    <div class="grid-item">
+        <img class="imgProduct" src="Picture\Product\Product 4.png" alt="Product 4">
+        <div class="ProductName">
+            Cat condominium with built-in scratching posts and adjustable holes
+        </div>
+        <div class="ProductDetails">
+            <b>Product Details</b>
+            <ul>
+                <li>Width : 50 cm</li>
+                <li>Length : 50 cm</li>
+                <li> Height : 150 cm</li>
+            </ul>
+        </div>
+    </div>
+    <div class="grid-containers">
+        <div class="item">Customer Details</div>
+        <form>
+            <p>
+                <b>Name</b>
+                <input type="text" placeholder="Name" required>
+            </p>
+            <p>
+                <b>Address</b>
+                <input type="text" placeholder="Address" required>
+            </p>
+            <p>
+                <b>Phone Number</b>
+                <input type="text" placeholder="Phone Number" required>
+            </p>
+            <p>
+                <b>Note</b>
+                <input type="text" placeholder="OPTIONAL">
+            </p>
+        </form>
+    </div>
+</div>
+<br><br><br><br><br>
+<footer>
+    @copyright Praphawarin Ongardudomrat 6504101353
+</footer>
+
+<script src="lab4.js"></script>
+
+</body>
+</html>
