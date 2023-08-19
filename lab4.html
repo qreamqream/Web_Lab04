@@ -7,7 +7,7 @@
 </head>
 <body>
     <div>
-        <img src="Picture\Head\CozyCats Condos.png" alt="Headd" width="1500" height="300">
+        <img src="Picture\Head\Head.png" alt="Headd" width="100%">
     </div>
     <div class="image-container">
         <img src="Picture/cat1.jpg" alt="cat1" style="--i: 0;">
@@ -40,16 +40,16 @@
 
 <div class="slideshow-container">
     <div class="slide">
-      <img src="Picture\Product\Product 1.png" alt="Product1">
+      <img src="Picture\SlideProduct\SlideProduct1.png" alt="SlideProduct1">
     </div>
     <div class="slide">
-      <img src="Picture\Product\Product 2.png" alt="Product2">
+      <img src="Picture\SlideProduct\SlideProduct2.png" alt="SlideProduct2">
     </div>
     <div class="slide">
-      <img src="Picture\Product\Product 3.png" alt="Product3">
+      <img src="Picture\SlideProduct\SlideProduct3.png" alt="SlideProduct3">
     </div>
     <div class="slide">
-      <img src="Picture\Product\Product 4.png" alt="Product4">
+      <img src="Picture\SlideProduct\SlideProduct4.png" alt="SlideProduct4">
     </div>
     <!-- Slideshow images -->
     <script>
@@ -69,123 +69,202 @@
         setTimeout(showSlides, 2000); // เปลี่ยนรูปทุก 2 วินาที
       }
     </script>
-    <style>
-      .slideshow-container {
-        max-width: 250px;
-        margin: auto;
-        position: relative;
-      }
-  
-      .slide {
-        display: none;
-        background-color: #d3ecdc; /* สีพื้นหลังสำหรับสไลด์ */
-        padding: 10px; /* เพิ่มระยะห่างรอบรูปภาพ */
-        border: 3.5px solid #f4d9c1; /* เพิ่มเส้นขอบสำหรับสไลด์ */
-        border-radius: 5px; /* ปรับแต่งมุมของกรอบ */
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* เพิ่มเงาสำหรับสไลด์ */
-      }
-  
-      .slide img {
-        width: 100%;
-        height: 100%;
-      }
-    </style>
+    
 </div>
   
   
-<div class="grid-container">
-    <div class="grid-item">
-        <img class="imgProduct" src="Picture\Product\Product 1.png" alt="Product 1">
-        <div class="ProductName">
-            Cat Condominium with Hidden Claw Retreat
-        </div>
-        <div class="ProductDetails">
-            <b>Product Colors</b>
-            <ul>
-                <li>Gray</li>
-                <li>Beige</li>
-                <li>Green</li>
-                <li>Brown</li>
-            </ul>
-            <b>Product Details</b>
-            <ul>
-                <li>Height : 40 cm</li>
-                <li>Bottom Base Width : 20 cm</li>
-                <li>Top Base Width : 15 cm</li>
-            </ul>
-        </div>
-    </div>
-    <div class="grid-item">
-            <img class="imgProduct" src="Picture\Product\Product 2.png" alt="Product 2">
-            <div class="ProductName">
-                Cat Condominium with Hidden Claw Retreat
+    <div class="grid-container">
+        <div class="grid-item">
+            <div class="subgrid-container">
+                <div class="subgrid-itemlf">
+                    <img class="imgProduct" src="Picture\Product\Product 1.png" alt="Product 1">
+                    <br><br>
+                    <p class="price">฿599</p>
+                </div>
+                    <div class="subgrid-itemrg">
+                        <div class="ProductName">
+                            Cat Condominium with Hidden Claw Retreat Design 1
+                        </div>
+                        <div class="ProductDetails">
+                            Product Details
+                            <ul>
+                                <li>Height : 40 cm</li>
+                                <li>Bottom Base Width : 20 cm</li>
+                                <li>Top Base Width : 15 cm</li>
+                            </ul>
+                            Product Colors : Gray, Beige, Green, Brown
+                        </div><br>
+                        <div class="button-container">
+                            <button class="button" id="decreaseButton1">-</button>
+                            <div class="number-display" id="numberDisplay1">0</div>
+                            <button class="button" id="increaseButton1">+</button>
+                        </div>
+                        
+                    </div>
             </div>
-            <div class="ProductDetails">
-                <b>Product Colors</b>
-                <ul>
-                    <li>Brown</li>
-                </ul>
-                <b>Product Details</b>
-                <ul>
-                    <li>Width : 60 cm</li>
-                    <li>Length : 40 cm</li>
-                    <li>Height : 130 cm</li>
-                </ul>
+            
+            
+        </div>
+        <div class="grid-item">
+            <div class="subgrid-container">
+                <div class="subgrid-itemlf">
+                    <img class="imgProduct" src="Picture\Product\Product 2.png" alt="Product 2">
+                    <br><br>
+                    <p class="price">฿765</p>
+                </div>
+
+                <div class="subgrid-itemrg">
+                    <div class="ProductName">
+                        Cat Condominium with Hidden Claw Retreat Design 2
+                    </div>
+                    <div class="ProductDetails">
+                        Product Details
+                        <ul>
+                            <li>Width : 60 cm</li>
+                            <li>Length : 40 cm</li>
+                            <li>Height : 130 cm</li>
+                        </ul>
+                        Product Colors : Brown
+                    </div><br>
+                    <div class="button-container">
+                        <button class="button" id="decreaseButton2">-</button>
+                        <div class="number-display" id="numberDisplay2">0</div>
+                        <button class="button" id="increaseButton2">+</button>
+                    </div>
+                    
+                </div>
+
             </div>
+        </div>
+        <div class="grid-item">
+            <div class="subgrid-container">
+                <div class="subgrid-itemlf">
+                    <img class="imgProduct" src="Picture\Product\Product 3.png" alt="Product 3">
+                    <br><br>
+                    <p class="price">฿840</p>
+                </div>
+
+                <div class="subgrid-itemrg">
+                        <div class="ProductName">
+                            Cat Condominium with Hidden Claw Retreat Design 3
+                        </div>
+                        <div class="ProductDetails">
+                            Product Details
+                            <ul>
+                                <li>Width : 56 cm</li>
+                                <li>Length : 56 cm</li>
+                                <li>Height : 155 cm</li>
+                            </ul>
+                            Product Colors : White/Black
+                        </div><br>
+                        <div class="button-container">
+                            <button class="button" id="decreaseButton3">-</button>
+                            <div class="number-display" id="numberDisplay3">0</div>
+                            <button class="button" id="increaseButton3">+</button>
+                        </div>
+                        
+                </div>
+
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="subgrid-container">
+                <div class="subgrid-itemlf">
+                    <img class="imgProduct" src="Picture\Product\Product 4.png" alt="Product 4">
+                    <br><br>
+                    <p class="price">฿1,250</p>
+                </div>
+
+
+                <div class="subgrid-itemrg">
+                    <div class="ProductName">
+                        Cat condominium with built-in scratching posts and adjustable holes
+                    </div>
+                    <div class="ProductDetails">
+                        Product Details
+                        <ul>
+                            <li>Width : 50 cm</li>
+                            <li>Length : 50 cm</li>
+                            <li> Height : 150 cm</li>
+                        </ul>
+                        Product Colors : Brown/White
+                    </div><br>
+                    <div class="button-container">
+                        <button class="button" id="decreaseButton4">-</button>
+                        <div class="number-display" id="numberDisplay4">0</div>
+                        <button class="button" id="increaseButton4">+</button>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+
     </div>
-    <div class="grid-item">
-        <img class="imgProduct" src="Picture\Product\Product 3.png" alt="Product 3">
-        <div class="ProductName">
-            Cat Condominium with Hidden Claw Retreat
-        </div>
-        <div class="ProductDetails">
-            <b>Product Details</b>
-            <ul>
-                <li>Width : 56 cm</li>
-                <li>Length : 56 cm</li>
-                <li>Height : 155 cm</li>
-            </ul>
-        </div>
-    </div>
-    <div class="grid-item">
-        <img class="imgProduct" src="Picture\Product\Product 4.png" alt="Product 4">
-        <div class="ProductName">
-            Cat condominium with built-in scratching posts and adjustable holes
-        </div>
-        <div class="ProductDetails">
-            <b>Product Details</b>
-            <ul>
-                <li>Width : 50 cm</li>
-                <li>Length : 50 cm</li>
-                <li> Height : 150 cm</li>
-            </ul>
-        </div>
-    </div>
+    <div class="openModalButtoncon">
+        <button id="openModalButton">Open Cart here</button>
+    </div>   
+    <div id="myModal" class="modal">
+            <div class="modal-content">
+            <span class="close">&times;</span>
+                <div class="modal-contentcon">
+                    <div class="submodal-contentcon">
+                        <h2>Quataion</h2>
+                        <div class="textdetails">
+                            <p class="itemincart">Items in cart</p>
+                            <div id="productList">
+                            </div>
+                            <br><br>
+                            <div class="subtotal">
+                                <div id="subtotal">Subtotal: 0.00 Baht</div>
+                                <div id="discount">Discount(10%): 0.00 Baht</div>
+                            </div>
+                        </div>
+                        <br>
+                        <div id="total">Total: 0.00 Baht</div>
+                        
+                    </div>
+                </div>
+            </div>
+      </div>
+      
+
+
+
     <div class="grid-containers">
+        <div class="subgrid-containers">
         <div class="item">Customer Details</div>
+        <div class="forminput">
         <form>
             <p>
                 <b>Name</b>
-                <input type="text" placeholder="Name" required>
+
+                <input class="textinput" type="text" placeholder="Name" required>
             </p>
             <p>
                 <b>Address</b>
-                <input type="text" placeholder="Address" required>
+                <textarea class="textarea" name="" id="" cols="30" rows="10" placeholder="Address" required></textarea>
+                <br>
             </p>
             <p>
                 <b>Phone Number</b>
-                <input type="text" placeholder="Phone Number" required>
+                <input class="textinput" type="text" pattern="[0-9]{10}" maxlength="10"  placeholder="Phone Number" required>
             </p>
             <p>
                 <b>Note</b>
-                <input type="text" placeholder="OPTIONAL">
+                <input class="textinput" type="text" placeholder="(OPTIONAL)">
             </p>
+            <button class="submitbutton" type="submit">OK</button>
+            <button class="resetbutton" type="reset">Cancel</button>
         </form>
+        </div>
+        </div>
+    
     </div>
-</div>
+
 <br><br><br><br><br>
 <footer>
-    @copyright Praphawarin Ongardudomrat 6504101353
+    Praphawarin Ongardudomrat 6504101353
 </footer>
 
 <script src="lab4.js"></script>
